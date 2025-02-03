@@ -53,17 +53,17 @@ bot.command("reports", async (ctx) => {
     });
 });
 
-let isLimitRequest = false;
+// let isLimitRequest = false;
 bot.on("callback_query:data", async (ctx) => {
-    if (isLimitRequest) {
-        setTimeout(() => {
-            isLimitRequest = false;
-        }, 500);
-        await ctx.reply("Превышен лимит нажатий в секунду.");
-        await ctx.answerCallbackQuery();
-        return;
-    }
-    isLimitRequest = true;
+    // if (isLimitRequest) {
+    //     setTimeout(() => {
+    //         isLimitRequest = false;
+    //     }, 500);
+    //     await ctx.reply("Превышен лимит нажатий в секунду.");
+    //     await ctx.answerCallbackQuery();
+    //     return;
+    // }
+    // isLimitRequest = true;
 
     try {
         const q = query(
