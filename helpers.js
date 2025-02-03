@@ -3,7 +3,7 @@ import { MONTHS, MONTHS_PARAMETERS } from "./constants.js";
 
 export function salaryReportCalculation(month, key) {
     // Поддерживает ли месяц возможность отчета о зарплате
-    if (!(MONTHS_PARAMETERS[key]?.appVersion >= 1.1)) return;
+    // if (!(MONTHS_PARAMETERS[key]?.appVersion >= 1.1)) return;
     if (!month || month.daysWorkedPerMonth === 0) return;
 
     // Месячная зарплата
