@@ -43,7 +43,7 @@ export function salaryReportCalculation(month, key) {
                 costOfOneHourOfWork * day.overtimeRatio;
 
             // Подсчет зарплаты
-            if (day?.isDayOff) {
+            if (day.isDayOff) {
                 overtimeHours += day.hoursWorkedPerDay;
                 overtime += costHourOvertimeWork * day.hoursWorkedPerDay;
             } else {
